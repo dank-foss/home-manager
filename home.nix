@@ -31,7 +31,7 @@
   # plain files is through 'home.file'.
   home.file = {
     ".config/fish/config.fish".source = ./config.fish;
-    ".config/nvim/init.lua".source = ./nvim/init.lua
+    ".config/nvim/init.lua".source = ./nvim/init.lua;
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
