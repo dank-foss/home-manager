@@ -41,10 +41,8 @@ require("lazy").setup({
     end,
     },
 
-    {'nvim-telescope/telescope.nvim', tag = '0.1.8',
-      dependencies = {'nvim-lua/plenary.nvim'},
-    },
-}
+    {'nvim-telescope/telescope.nvim', tag = '0.1.8',  dependencies = {'nvim-lua/plenary.nvim'}},
+},
   -- Configure any other settings here. See the documentation for more details.
   install = { colorscheme = { "habamax" } },   -- colorscheme that will be used when installing plugins.
   checker = { enabled = true },   -- automatically check for plugin updates
