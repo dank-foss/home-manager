@@ -38,6 +38,7 @@ require("lazy").setup({
     priority = 1000,
     config = function()
 	vim.cmd([[colorscheme pywal16]])
+    end,
     },
 
     {'nvim-telescope/telescope.nvim', tag = '0.1.8',
