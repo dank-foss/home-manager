@@ -36,7 +36,9 @@ require("lazy").setup({
     {'uZer/pywal16.nvim', 
     name = 'pywal16',
     priority = 1000,
-    config = true},
+    config = function()
+	vim.cmd([[colorscheme pywal16]])
+    },
 
     {'nvim-telescope/telescope.nvim', tag = '0.1.8',
       dependencies = { 'nvim-lua/plenary.nvim' }
