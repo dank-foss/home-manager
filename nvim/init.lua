@@ -33,9 +33,12 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     -- add your plugins here
-    {'uZer/pywal16.nvim', name = 'pywal16', priority = 1000}
+    {'uZer/pywal16.nvim', 
+    name = 'pywal16',
+    priority = 1000,
+    config = true}
   },
   -- Configure any other settings here. See the documentation for more details.
-  install = { colorscheme = { "habamax" } },   -- colorscheme that will be used when installing plugins.
+--  install = { colorscheme = { "habamax" } },   -- colorscheme that will be used when installing plugins.
   checker = { enabled = true },   -- automatically check for plugin updates
 })
