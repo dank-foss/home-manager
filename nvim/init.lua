@@ -42,7 +42,7 @@ require("lazy").setup({
     },
 
     {'nvim-telescope/telescope.nvim', tag = '0.1.8',
-      dependencies = { 'nvim-lua/plenary.nvim' }
+      dependencies = {'nvim-lua/plenary.nvim'},
     },
 }
   -- Configure any other settings here. See the documentation for more details.
