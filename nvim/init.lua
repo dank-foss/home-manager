@@ -7,13 +7,6 @@
     vim.o.number = true
     vim.o.relativenumber = true
 
--- Telescope
-local builtin = require('telescope.builtin')
-vim.keymap.set("n", '<leader>ff', builtin.find_files, {})
-vim.keymap.set("n", '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-
-
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -78,3 +71,12 @@ require("lazy").setup({
 
   checker = { enabled = true },   -- automatically check for plugin updates
 })
+
+
+-- Telescope
+local builtin = require('telescope.builtin')
+vim.keymap.set("n", '<leader>ff', builtin.find_files, {})
+vim.keymap.set("n", '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+
+
