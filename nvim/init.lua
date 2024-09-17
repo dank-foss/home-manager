@@ -2,7 +2,9 @@ vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
 vim.o.expandtab = false
 vim.o.clipboard = "unnamedplus"
-
+vim.o.foldmethod = "manual"
+vim.o.number = true
+vim.o.relativenumber = true
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -31,10 +33,9 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     -- add your plugins here
+    {'uZer/pywal16.nvim', name = 'pywal16', priority = 1000}
   },
   -- Configure any other settings here. See the documentation for more details.
-  -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "habamax" } },
-  -- automatically check for plugin updates
-  checker = { enabled = true },
+  install = { colorscheme = { "habamax" } },   -- colorscheme that will be used when installing plugins.
+  checker = { enabled = true },   -- automatically check for plugin updates
 })
