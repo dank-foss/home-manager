@@ -1,10 +1,18 @@
-vim.o.softtabstop = 4
-vim.o.shiftwidth = 4
-vim.o.expandtab = false
-vim.o.clipboard = "unnamedplus"
-vim.o.foldmethod = "manual"
-vim.o.number = true
-vim.o.relativenumber = true
+-- Custom Options
+    vim.o.softtabstop = 4
+    vim.o.shiftwidth = 4
+    vim.o.expandtab = false
+    vim.o.clipboard = "unnamedplus"
+    vim.o.foldmethod = "manual"
+    vim.o.number = true
+    vim.o.relativenumber = true
+
+-- Telescope
+local builtin = require('telescope.builtin')
+vim.keymap.set("n", '<leader>ff', builtin.find_files, {})
+vim.keymap.set("n", '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -20,12 +28,15 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     vim.fn.getchar()
     os.exit(1)
   end
+
 end
 vim.opt.rtp:prepend(lazypath)
 
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 -- This is also a good place to setup other settings (vim.opt)
+
+
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
@@ -46,8 +57,24 @@ require("lazy").setup({
     dependencies = {'nvim-lua/plenary.nvim'}
     },
 
+    {
+        "nvim-treesitter/nvim-treesitter",
+        build = ":TSUpdate",
+        config = function () 
+          local configs = require("nvim-treesitter.configs")
+    
+          configs.setup({
+              ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html" },
+              sync_install = false,
+              highlight = { enable = true },
+              indent = { enable = true },  
+            })
+        end,
+    }
+
 },
   -- Configure any other settings here. See the documentation for more details.
   install = { colorscheme = { "habamax" } },   -- colorscheme that will be used when installing plugins.
+
   checker = { enabled = true },   -- automatically check for plugin updates
 })
