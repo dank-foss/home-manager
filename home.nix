@@ -32,7 +32,11 @@
   home.file = {
     ".config/fish/config.fish".source = ./fish/config.fish;
     ".config/fish/functions/fish_greeting.fish".source = ./fish/functions/fish_greeting.fish;
+#    ".config/fish/functions/wconf.fish".source = ./fish/functions/wconf.fish;
+#    ".config/fish/functions/scrshot.fish".source = ./fish/functions/scrshot.fish;
+#    ".config/fish/functions/hconf.fish".source = ./fish/functions/hconf.fish;
     ".config/nvim/init.lua".source = ./nvim/init.lua;
+    
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
