@@ -18,6 +18,7 @@ vim.keymap.set("n", '<leader>fb', builtin.buffers, {})
 
 --Neotree
 vim.keymap.set("n", '<leader>fe', ":Neotree filesystem reveal left<CR>", {})
+vim.keymap.set("n", '<leader>dc', ":Neotree dir=", {})
 vim.keymap.set("n", '<leader>fc', ":Neotree close<CR>", {})
 vim.keymap.set("n", '<leader>gs', ":Neotree reveal git_status<CR>", {})
 
