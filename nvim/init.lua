@@ -8,7 +8,9 @@ vim.o.number = true
 vim.o.relativenumber = true
 vim.o.laststatus=3 --sets border for splits
 
--- Bootstrap lazy.nvim
+require("config.lazy")
+
+--[[ Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -94,7 +96,7 @@ require("lazy").setup({
 
   checker = { enabled = true },   -- automatically check for plugin updates
 })
-
+--]
 
 -- Telescope
 local builtin = require('telescope.builtin')
