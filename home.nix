@@ -45,6 +45,7 @@
     ".config/nvim/lua/plugins/lualine.lua".source = ./nvim/lua/plugins/lualine.lua;
     ".config/nvim/lua/plugins/gitsigns.lua".source = ./nvim/lua/plugins/gitsigns.lua;
     ".config/nvim/lua/plugins/comment.lua".source = ./nvim/lua/plugins/comment.lua;
+    ".config/nvim/lua/plugins/fugitive.lua".source = ./nvim/lua/plugins/fugitive.lua;
     
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
