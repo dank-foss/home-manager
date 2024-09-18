@@ -5,6 +5,4 @@ return {
     config = function()
 	vim.cmd([[colorscheme pywal16]])
     end,
-},
-
-
+}
