@@ -32,17 +32,16 @@
   home.file = {
     ".config/fish/config.fish".source = ./fish/config.fish;
     ".config/fish/functions/fish_greeting.fish".source = ./fish/functions/fish_greeting.fish;
-#    ".config/fish/functions/wconf.fish".source = ./fish/functions/wconf.fish;
-#    ".config/fish/functions/scrshot.fish".source = ./fish/functions/scrshot.fish;
-#    ".config/fish/functions/hconf.fish".source = ./fish/functions/hconf.fish;
-#    ".config/nvim/init.lua".source = ./nvim/init.lua;
-#    ".config/nvim/lua/config/lazy.lua".source = ./nvim/lua/config/lazy.lua;
-#    ".config/nvim/lua/plugins/flog.lua".source = ./nvim/lua/plugins/flog.lua;
-#    ".config/nvim/lua/plugins/neotree.lua".source = ./nvim/lua/plugins/neotree.lua;
-#    ".config/nvim/lua/plugins/pywal16.lua".source = ./nvim/lua/plugins/pywal16.lua;
-#    ".config/nvim/lua/plugins/telescope.lua".source = ./nvim/lua/plugins/telescope.lua;
-#    ".config/nvim/lua/plugins/treesitter.lua".source = ./nvim/lua/plugins/treesitter.lua;
-    ".config/nvim/".source = ./nvim/;
+    ".config/fish/functions/wconf.fish".source = ./fish/functions/wconf.fish;
+    ".config/fish/functions/scrshot.fish".source = ./fish/functions/scrshot.fish;
+    ".config/fish/functions/hconf.fish".source = ./fish/functions/hconf.fish;
+    ".config/nvim/init.lua".source = ./nvim/init.lua;
+    ".config/nvim/lua/config/lazy.lua".source = ./nvim/lua/config/lazy.lua;
+    ".config/nvim/lua/plugins/flog.lua".source = ./nvim/lua/plugins/flog.lua;
+    ".config/nvim/lua/plugins/neotree.lua".source = ./nvim/lua/plugins/neotree.lua;
+    ".config/nvim/lua/plugins/pywal16.lua".source = ./nvim/lua/plugins/pywal16.lua;
+    ".config/nvim/lua/plugins/telescope.lua".source = ./nvim/lua/plugins/telescope.lua;
+    ".config/nvim/lua/plugins/treesitter.lua".source = ./nvim/lua/plugins/treesitter.lua;
     
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
