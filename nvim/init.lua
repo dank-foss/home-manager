@@ -27,3 +27,6 @@ vim.keymap.set("n", '<leader>gs', ":Neotree reveal git_status<CR>", {})
 -- Splits
 vim.keymap.set("n", "<leader>vs", ":vs<CR>")
 vim.keymap.set("n", "<leader>hs", ":spl<CR>")
+
+--Gitsigns
+vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>")
