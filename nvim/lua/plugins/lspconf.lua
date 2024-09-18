@@ -20,6 +20,7 @@ return {
         config = function()
 	    local lspconfig = require("lspconfig")
 	    lspconfig.lua_ls.setup({})
+	    vim.keymap.set("n", "<C-d>", vim.lsp.buf.hover(), {})
 	end
     },
 }
