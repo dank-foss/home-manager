@@ -42,6 +42,7 @@
     ".config/nvim/lua/plugins/pywal16.lua".source = ./nvim/lua/plugins/pywal16.lua;
     ".config/nvim/lua/plugins/telescope.lua".source = ./nvim/lua/plugins/telescope.lua;
     ".config/nvim/lua/plugins/treesitter.lua".source = ./nvim/lua/plugins/treesitter.lua;
+    ".config/nvim/lua/plugins/lualine.lua".source = ./nvim/lua/plugins/lualine.lua;
     
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
