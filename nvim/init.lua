@@ -77,7 +77,16 @@ require("lazy").setup({
           "MunifTanjim/nui.nvim",
           -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
         }
-    }
+    },
+
+    {
+	"rbong/vim-flog",
+	lazy = true,
+	cmd = { "Flog", "Flogsplit", "Floggit" },
+	dependencies = {
+	  "tpope/vim-fugitive",
+	},
+    },
 
 },
   -- Configure any other settings here. See the documentation for more details.
