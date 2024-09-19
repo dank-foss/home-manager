@@ -17,6 +17,7 @@ vim.keymap.set("n", '<leader>ff', builtin.find_files, {})
 vim.keymap.set("n", '<leader>fg', builtin.live_grep, {})
 vim.keymap.set("n", '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = '[S]earch [H]elp' })
+vim.keymap.set('n', '<leader>fr', builtin.search_history, { desc = '[F]ind [R]ecent' })
 
 --Neotree
 vim.keymap.set("n", '<leader>fe', ":Neotree filesystem reveal left<CR>", {})
