@@ -22,6 +22,7 @@ return {
 	    lspconfig.lua_ls.setup({})
 	    vim.keymap.set("n", "<C-d>", vim.lsp.buf.hover, {})
 	    vim.keymap.set({"n", "v"}, "<leader>ca", vim.lsp.buf.code_action, {})
+	    vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 	end
     },
 }
