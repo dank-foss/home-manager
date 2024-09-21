@@ -20,7 +20,7 @@ vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "[F]ind [H]elp" })
-vim.keymap.set("n", "<leader>fr", ":Telescope frecency", { desc = "[F]ind [R]ecent" })
+vim.keymap.set("n", "<leader>fr", ":Telescope frecency<CR>", { desc = "[F]ind [R]ecent" })
 
 --Neotree
 vim.keymap.set("n", "<leader>fe", ":Neotree filesystem reveal left<CR>", {})
