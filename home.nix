@@ -35,6 +35,9 @@
 #    ".config/fish/functions/wconf.fish".source = ./fish/functions/wconf.fish;
 #    ".config/fish/functions/scrshot.fish".source = ./fish/functions/scrshot.fish;
 #    ".config/fish/functions/hconf.fish".source = ./fish/functions/hconf.fish;
+
+
+    # nvim
     ".config/nvim/init.lua".source = ./nvim/init.lua;
     ".config/nvim/lua/config/lazy.lua".source = ./nvim/lua/config/lazy.lua;
     ".config/nvim/lua/plugins/flog.lua".source = ./nvim/lua/plugins/flog.lua;
@@ -48,6 +51,7 @@
     ".config/nvim/lua/plugins/fugitive.lua".source = ./nvim/lua/plugins/fugitive.lua;
     ".config/nvim/lua/plugins/lspconf.lua".source = ./nvim/lua/plugins/lspconf.lua;
     ".config/nvim/lua/plugins/oil.lua".source = ./nvim/lua/plugins/oil.lua;
+    ".config/nvim/lua/plugins/nonels.lua".source = ./nvim/lua/plugins/nonels.lua;
     
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
