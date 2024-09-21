@@ -7,7 +7,7 @@ return {
 	    sources = {
 	        null_ls.builtins.formatting.stylua,
 	        null_ls.builtins.completion.spell,
-	        null_ls.builtins.diagnostics.css-lsp,
+	        null_ls.builtins.diagnostics.cssls,
 		null_ls.builtins.formatting.prettier,
 	    },
 	})
