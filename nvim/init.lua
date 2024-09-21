@@ -33,7 +33,7 @@ function give_state()
 		return ":Neotree filesystem reveal left<CR>"
 	else
 		is_neotree_up = false
-		return "Neotree close <CR>"
+		return ":Neotree close<CR>"
 	end
 end
 
