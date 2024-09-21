@@ -5,6 +5,7 @@ return {
 
 	config = function()
 		local dap, dapui = require("dap"), require("dapui")
+
 		vim.keymap.set("n", "<Leader>dt", function()
 			dap.toggle_breakpoint()
 		end)
