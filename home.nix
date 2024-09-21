@@ -53,6 +53,7 @@
     ".config/nvim/lua/plugins/oil.lua".source = ./nvim/lua/plugins/oil.lua;
     ".config/nvim/lua/plugins/nonels.lua".source = ./nvim/lua/plugins/nonels.lua;
     ".config/nvim/lua/plugins/completions.lua".source = ./nvim/lua/plugins/completions.lua;
+    ".config/nvim/lua/plugins/debug.lua".source = ./nvim/lua/plugins/debug.lua;
     
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
