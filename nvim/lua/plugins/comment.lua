@@ -3,7 +3,7 @@ return {
 	opts = {},
 	config = function()
 		require("Comment").setup({
-			toggler = { line = "<C-/>", block = "<C-/>" },
+			toggler = { line = "<C-/>", block = "<C-//>" },
 		})
 	end,
 }
