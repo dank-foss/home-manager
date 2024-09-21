@@ -24,7 +24,20 @@ vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "[F]ind [H]elp" })
 vim.keymap.set("n", "<leader>fr", ":Telescope frecency<CR><BS>", { desc = "[F]ind [R]ecent" })
 
 --Neotree
-vim.keymap.set("n", "<leader>fe", ":Neotree filesystem reveal left<CR>", {})
+
+is_neotree_up = false
+
+function give_state()
+	if is_neotree_up == false then
+		is_neotree_up = true
+		return ":Neotree filesystem reveal left<CR>"
+	else
+		is_neotree_up = false
+		return "Neotree close <CR>"
+	end
+end
+
+vim.keymap.set("n", "<leader>fe", give_state, {}) --":Neotree filesystem reveal left<CR>", {})
 vim.keymap.set("n", "<leader>fd", ":Neotree dir=", {})
 vim.keymap.set("n", "<leader>fc", ":Neotree close<CR>", {})
 vim.keymap.set("n", "<leader>gs", ":Neotree reveal git_status<CR>", {})
@@ -36,3 +49,6 @@ vim.keymap.set("n", "<leader>hs", ":spl<CR>")
 --Gitsigns
 vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>")
 vim.keymap.set("n", "<leader>glb", ":Gitsigns toggle_current_line_blame<CR>")
+
+--MISC
+vim.keymap.set("n", "<leader>oe", ":e ~/.config/home-manager/")
