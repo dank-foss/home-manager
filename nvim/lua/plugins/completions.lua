@@ -7,6 +7,7 @@ return {
 			"saadparwaiz1/cmp_luasnip",
 			"rafamadriz/friendly-snippets",
 			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/cmp-path",
 		},
 
 		config = function()
@@ -35,6 +36,7 @@ return {
 					{ name = "luasnip" }, -- For luasnip users.
 				}, {
 					{ name = "buffer" },
+					{name = "path"}
 				}),
 			})
 		end,
