@@ -4,7 +4,7 @@ return {
 	dependencies = { "rcarriga/nvim-dap-ui", "nvim-neotest/nvim-nio", "jbyuki/one-small-step-for-vimkind" },
 
 	config = function()
-		require("dap-ui").setup()
+		require("dapui").setup()
 		local dap, dapui = require("dap"), require("dapui")
 
 		vim.keymap.set("n", "<Leader>dt", function()
