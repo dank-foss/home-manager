@@ -8,11 +8,14 @@ return {
 
 	{
 		"williamboman/mason-lspconfig.nvim",
-		config = function()
-			require("mason-lspconfig").setup({
-				ensure_installed = { "cssls", "lua_ls", "jedi_language_server" },
-			})
-		end,
+		opts = {
+			auto_install = true,
+		},
+		-- config = function()
+		-- 	require("mason-lspconfig").setup({
+		-- 		-- ensure_installed = { "cssls", "lua_ls", "jedi_language_server" },
+		-- 	})
+		-- end,
 	},
 
 	{
