@@ -50,4 +50,4 @@ vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>")
 vim.keymap.set("n", "<leader>glb", ":Gitsigns toggle_current_line_blame<CR>")
 
 --MISC
-vim.keymap.set("n", "<leader>oe", ":e ~/.config/home-manager/")
+vim.keymap.set("n", "<leader>oe", ":e ~/.config/home-manager/<CR>")
