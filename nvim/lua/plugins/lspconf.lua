@@ -21,6 +21,7 @@ return {
 	    local lspconfig = require("lspconfig")
 	    lspconfig.lua_ls.setup({})
 	    lspconfig.jedi_language_server.setup({})
+	    lspconfig.cssls.setup({})
 
 	    vim.keymap.set("n", "<C-d>", vim.lsp.buf.hover, {})
 	    vim.keymap.set({"n", "v"}, "<leader>ca", vim.lsp.buf.code_action, {})
