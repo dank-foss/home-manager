@@ -36,7 +36,7 @@ local give_state = function()
 	end
 end
 
-vim.keymap.set("n", "<leader>fe", give_state, {}) --":Neotree filesystem reveal left<CR>", {})
+vim.keymap.set("n", "<leader>fe", give_state(), {}) --":Neotree filesystem reveal left<CR>", {})
 vim.keymap.set("n", "<leader>fd", ":Neotree dir=", {})
 vim.keymap.set("n", "<leader>fc", ":Neotree close<CR>", {})
 vim.keymap.set("n", "<leader>gs", ":Neotree reveal git_status<CR>", {})
