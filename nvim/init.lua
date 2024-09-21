@@ -8,7 +8,9 @@ vim.o.number = true
 vim.o.relativenumber = true
 vim.o.laststatus=3 --sets border for splits
 vim.o.scrolloff = 5
+vim.o.spr = true
 
+--Lazy
 require("config.lazy")
 
 -- Telescope
