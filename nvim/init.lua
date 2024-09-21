@@ -26,7 +26,7 @@ vim.keymap.set("n", "<leader>fr", ":Telescope frecency<CR><BS>", { desc = "[F]in
 --Neotree
 
 is_neotree_up = false
-local give_state = function()
+function give_state()
 	if is_neotree_up == false then
 		is_neotree_up = true
 		return ":Neotree filesystem reveal left<CR>"
