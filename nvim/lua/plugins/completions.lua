@@ -10,6 +10,7 @@ return {
 			"hrsh7th/cmp-path",
 		},
 
+		event = "InsertEnter",
 		config = function()
 			local cmp = require("cmp")
 			require("luasnip.loaders.from_vscode").lazy_load()
