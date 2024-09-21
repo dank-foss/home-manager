@@ -11,7 +11,7 @@ vim.o.scrolloff = 5
 vim.o.spr = true
 vim.o.tabstop = 4
 vim.o.wrap = false
---
+
 --Lazy
 require("config.lazy")
 
