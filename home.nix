@@ -55,6 +55,7 @@
     ".config/nvim/lua/plugins/completions.lua".source = ./nvim/lua/plugins/completions.lua;
     ".config/nvim/lua/plugins/debug.lua".source = ./nvim/lua/plugins/debug.lua;
     ".config/nvim/lua/plugins/autoclose.lua".source = ./nvim/lua/plugins/autoclose.lua;
+    ".config/nvim/lua/plugins/autosession.lua".source = ./nvim/lua/plugins/autosession.lua;
     
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a

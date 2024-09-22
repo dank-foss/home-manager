@@ -36,7 +36,7 @@ return {
 					{ name = "nvim_lsp", priority = 10 },
 					{ name = "luasnip",  priority = 10 }, -- For luasnip users.
 				}, {
-					{ name = "path",  priority = 9 },
+					{ name = "path",  priority = 10 },
 					{ name = "buffer" },
 				}),
 			})
