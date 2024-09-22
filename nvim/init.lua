@@ -21,22 +21,21 @@ vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "[F]ind [H]elp" })
-vim.keymap.set("n", "<leader>fr", ":Telescope frecency<CR><BS>", { desc = "[F]ind [R]ecent" })
+vim.keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = "[F]ind [R]ecent" })
 
 --Neotree
 
-is_neotree_up = false
+is_neotree_up = ":Neotree close<CR>"
 function give_state()
-	if is_neotree_up == false then
-		is_neotree_up = true
-		return ":Neotree filesystem reveal left<CR>"
+	if is_neotree_up == ":Neotree close<CR>" then
+		is_neotree_up = ":Neotree filesystem reveal left<CR>"
 	else
-		is_neotree_up = false
-		return ":Neotree close<CR>"
+		is_neotree_up = ":Neotree close<CR>"
 	end
+	return is_neotree_up
 end
 
-vim.keymap.set("n", "<leader>fe", give_state(), {}) --":Neotree filesystem reveal left<CR>", {})
+vim.keymap.set("n", "<leader>fe", give_state, {expr = true})
 vim.keymap.set("n", "<leader>fd", ":Neotree dir=", {})
 vim.keymap.set("n", "<leader>fc", ":Neotree close<CR>", {})
 vim.keymap.set("n", "<leader>gs", ":Neotree reveal git_status<CR>", {})
@@ -52,4 +51,3 @@ vim.keymap.set("n", "<leader>glb", ":Gitsigns toggle_current_line_blame<CR>")
 --MISC
 vim.keymap.set("n", "<leader>oe", ":Neotree dir=~/.config/home-manager/<CR> ")
 vim.keymap.set("i", "{", "{}<Esc>i")
-
