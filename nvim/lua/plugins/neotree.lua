@@ -9,10 +9,9 @@ return {
 	},
 	config = function()
 		require("neo-tree").setup({
-			default_component_configs = {
-				window = {
-					width = "fit_content",
-				},
+			window = {
+				close_if_last_window = true,
+				width = "25%",
 			},
 		})
 	end,
