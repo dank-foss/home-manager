@@ -25,19 +25,10 @@ vim.keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = "[F]ind [R]ecent" }
 
 --Neotree
 
-is_neotree_up = ":Neotree close<CR>"
-function give_state()
-	if is_neotree_up == ":Neotree close<CR>" then
-		is_neotree_up = ":Neotree filesystem reveal left<CR>"
-	else
-		is_neotree_up = ":Neotree close<CR>"
-	end
-	return is_neotree_up
-end
-
-vim.keymap.set("n", "<leader>fe", give_state, {expr = true})
-vim.keymap.set("n", "<leader>fd", ":Neotree dir=", {})
-vim.keymap.set("n", "<leader>fc", ":Neotree close<CR>", {})
+vim.keymap.set("n", "<leader>e", function()
+	require("neo-tree.command").execute({ reveal = true, toggle = true })
+end, {})
+vim.keymap.set("n", "<leader>cd", ":Neotree dir=", {})
 vim.keymap.set("n", "<leader>gs", ":Neotree reveal git_status<CR>", {})
 
 -- Splits
