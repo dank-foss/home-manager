@@ -56,17 +56,7 @@
     ".config/nvim/lua/plugins/debug.lua".source = ./nvim/lua/plugins/debug.lua;
     ".config/nvim/lua/plugins/autoclose.lua".source = ./nvim/lua/plugins/autoclose.lua;
     ".config/nvim/lua/plugins/autosession.lua".source = ./nvim/lua/plugins/autosession.lua;
-    
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
-    # ".screenrc".source = dotfiles/screenrc;
-
-    # # You can also set the file content immediately.
-    # ".gradle/gradle.properties".text = ''
-    #   org.gradle.console=verbose
-    #   org.gradle.daemon.idletimeout=3600000
-    # '';
+	".config/nvim/lua/plugins/dashboard.lua".source = ./nvim/lua/plugins/dashboard.lua;    
   };
 
   # Home Manager can also manage your environment variables through
