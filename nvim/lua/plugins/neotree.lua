@@ -10,7 +10,6 @@ return {
 	config = function()
 		require("neo-tree").setup({
 			window = {
-				close_if_last_window = true,
 				width = "25%",
 			},
 		})
