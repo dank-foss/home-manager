@@ -16,6 +16,7 @@ vim.o.smartcase = true
 
 --Lazy
 require("config.lazy")
+vim.keymap.set("n", '<leader>lu', ":Lazy update<CR>")
 
 -- Telescope
 local builtin = require("telescope.builtin")
@@ -47,4 +48,4 @@ vim.keymap.set("n", "<leader>glb", ":Gitsigns toggle_current_line_blame<CR>")
 
 --MISC
 vim.keymap.set("n", "<leader>oe", ":Neotree dir=~/.config/home-manager/<CR> ")
-vim.keymap.set("n", "<leader>qq", ":q<CR> ")
+vim.keymap.set("n", "<leader>qq", ":wq<CR> ")
