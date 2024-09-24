@@ -58,7 +58,6 @@
     ".config/nvim/lua/plugins/autosession.lua".source = ./nvim/lua/plugins/autosession.lua;
 	".config/nvim/lua/plugins/dashboard.lua".source = ./nvim/lua/plugins/dashboard.lua;    
 	".config/nvim/lua/plugins/harpoon.lua".source = ./nvim/lua/plugins/harpoon.lua;    
-	".config/nvim/lua/plugins/tabnine.lua".source = ./nvim/lua/plugins/tabnine.lua;    
   };
 
   # Home Manager can also manage your environment variables through
