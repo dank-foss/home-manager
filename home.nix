@@ -80,6 +80,14 @@
     # EDITOR = "emacs";
   };
 
+	programs.git = {
+		enable = true;
+		aliases = {
+			ac = "commit -am";
+		};
+		userEmail = "chadfoss@duck.com";
+		userName = "chaddy";
+	}; 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
