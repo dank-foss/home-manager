@@ -49,5 +49,5 @@ vim.keymap.set("n", "<leader>glb", ":Gitsigns toggle_current_line_blame<CR>")
 --MISC
 vim.keymap.set("n", "<leader>oe", ":Neotree dir=~/.config/home-manager/<CR> ")
 vim.keymap.set("n", "<leader>q", ":q!<CR>")
-vim.keymap.set("n", "<leader>qq", ":wq<CR>")
-vim.keymap.set("n", "<leader>w", ":wq<CR>")
+vim.keymap.set("n", "<leader>wq", ":wq<CR>")
+vim.keymap.set("n", "<leader>w", ":w<CR>")
