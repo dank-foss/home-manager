@@ -38,24 +38,24 @@
 
 
     # nvim
-    ".config/nvim/init.lua".source = ./nvim/init.lua;
-    ".config/nvim/lua/config/lazy.lua".source = ./nvim/lua/config/lazy.lua;
-    ".config/nvim/lua/plugins/flog.lua".source = ./nvim/lua/plugins/flog.lua;
-    ".config/nvim/lua/plugins/neotree.lua".source = ./nvim/lua/plugins/neotree.lua;
-    ".config/nvim/lua/plugins/pywal16.lua".source = ./nvim/lua/plugins/pywal16.lua;
-    ".config/nvim/lua/plugins/telescope.lua".source = ./nvim/lua/plugins/telescope.lua;
-    ".config/nvim/lua/plugins/treesitter.lua".source = ./nvim/lua/plugins/treesitter.lua;
-    ".config/nvim/lua/plugins/lualine.lua".source = ./nvim/lua/plugins/lualine.lua;
-    ".config/nvim/lua/plugins/gitsigns.lua".source = ./nvim/lua/plugins/gitsigns.lua;
-    ".config/nvim/lua/plugins/comment.lua".source = ./nvim/lua/plugins/comment.lua;
-    ".config/nvim/lua/plugins/fugitive.lua".source = ./nvim/lua/plugins/fugitive.lua;
-    ".config/nvim/lua/plugins/lspconf.lua".source = ./nvim/lua/plugins/lspconf.lua;
-    ".config/nvim/lua/plugins/oil.lua".source = ./nvim/lua/plugins/oil.lua;
-    ".config/nvim/lua/plugins/nonels.lua".source = ./nvim/lua/plugins/nonels.lua;
-    ".config/nvim/lua/plugins/completions.lua".source = ./nvim/lua/plugins/completions.lua;
-    ".config/nvim/lua/plugins/debug.lua".source = ./nvim/lua/plugins/debug.lua;
-    ".config/nvim/lua/plugins/autoclose.lua".source = ./nvim/lua/plugins/autoclose.lua;
-    ".config/nvim/lua/plugins/autosession.lua".source = ./nvim/lua/plugins/autosession.lua;
+	".config/nvim/init.lua".source = ./nvim/init.lua;
+	".config/nvim/lua/config/lazy.lua".source = ./nvim/lua/config/lazy.lua;
+	".config/nvim/lua/plugins/flog.lua".source = ./nvim/lua/plugins/flog.lua;
+	".config/nvim/lua/plugins/neotree.lua".source = ./nvim/lua/plugins/neotree.lua;
+	".config/nvim/lua/plugins/pywal16.lua".source = ./nvim/lua/plugins/pywal16.lua;
+	".config/nvim/lua/plugins/telescope.lua".source = ./nvim/lua/plugins/telescope.lua;
+	".config/nvim/lua/plugins/treesitter.lua".source = ./nvim/lua/plugins/treesitter.lua;
+	".config/nvim/lua/plugins/lualine.lua".source = ./nvim/lua/plugins/lualine.lua;
+	".config/nvim/lua/plugins/gitsigns.lua".source = ./nvim/lua/plugins/gitsigns.lua;
+	".config/nvim/lua/plugins/comment.lua".source = ./nvim/lua/plugins/comment.lua;
+	".config/nvim/lua/plugins/fugitive.lua".source = ./nvim/lua/plugins/fugitive.lua;
+	".config/nvim/lua/plugins/lspconf.lua".source = ./nvim/lua/plugins/lspconf.lua;
+	".config/nvim/lua/plugins/oil.lua".source = ./nvim/lua/plugins/oil.lua;
+	".config/nvim/lua/plugins/nonels.lua".source = ./nvim/lua/plugins/nonels.lua;
+	".config/nvim/lua/plugins/completions.lua".source = ./nvim/lua/plugins/completions.lua;
+	".config/nvim/lua/plugins/debug.lua".source = ./nvim/lua/plugins/debug.lua;
+	".config/nvim/lua/plugins/autoclose.lua".source = ./nvim/lua/plugins/autoclose.lua;
+	".config/nvim/lua/plugins/autosession.lua".source = ./nvim/lua/plugins/autosession.lua;
 	".config/nvim/lua/plugins/dashboard.lua".source = ./nvim/lua/plugins/dashboard.lua;    
 	".config/nvim/lua/plugins/harpoon.lua".source = ./nvim/lua/plugins/harpoon.lua;    
 	".config/nvim/lua/plugins/multicursor.lua".source = ./nvim/lua/plugins/multicursor.lua;    
