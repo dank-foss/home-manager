@@ -1,4 +1,4 @@
-return {
-	"nvimdev/indentmini.nvim",
-	config = true,
-}
+-- return {
+-- 	"nvimdev/indentmini.nvim",
+-- 	config = true,
+-- }
