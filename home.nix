@@ -60,6 +60,7 @@
 	".config/nvim/lua/plugins/harpoon.lua".source = ./nvim/lua/plugins/harpoon.lua;    
 	".config/nvim/lua/plugins/multicursor.lua".source = ./nvim/lua/plugins/multicursor.lua;
 	".config/nvim/lua/plugins/highlight.lua".source = ./nvim/lua/plugins/highlight.lua;
+	".config/nvim/lua/plugins/indent.lua".source = ./nvim/lua/plugins/indent.lua;
   };
 
   # Home Manager can also manage your environment variables through
