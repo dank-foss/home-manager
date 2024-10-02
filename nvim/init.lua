@@ -42,10 +42,6 @@ vim.keymap.set({"n", "i", "v"}, "<C-j>", ":wincmd j<CR>")
 vim.keymap.set({"n", "i", "v"}, "<C-k>", ":wincmd k<CR>")
 vim.keymap.set({"n", "i", "v"}, "<C-l>", ":wincmd l<CR>")
 
---Gitsigns
-vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>")
-vim.keymap.set("n", "<leader>glb", ":Gitsigns toggle_current_line_blame<CR>")
-
 --MISC
 vim.keymap.set("n", "<leader>oe", ":Neotree dir=~/.config/home-manager/<CR> ")
 vim.keymap.set("n", "<leader>q", ":q!<CR>")
