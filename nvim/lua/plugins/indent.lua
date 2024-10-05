@@ -3,8 +3,8 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local def_style = {
-			{ fg = "#79865E" },
 			{ fg = "#AB572F" },
+			{ fg = "#a39e8a" },
 		}
 		require("hlchunk").setup({
 			chunk = { enable = true, style = def_style },
