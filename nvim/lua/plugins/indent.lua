@@ -8,7 +8,7 @@ return {
 		}
 		require("hlchunk").setup({
 			chunk = { enable = true, style = def_style },
-			indent = { enable = true, style = def_style },
+			indent = { enable = true },
 			line_num = { enable = true, style = def_style },
 		})
 	end,
