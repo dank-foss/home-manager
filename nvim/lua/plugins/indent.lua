@@ -4,7 +4,7 @@ return {
 	config = function()
 		local def_style = {
 			{ fg = "#AB572F" },
-			{ fg = "#D14A18" },
+			{ fg = "#748469" },
 		}
 		require("hlchunk").setup({
 			chunk = { enable = true, style = def_style },
