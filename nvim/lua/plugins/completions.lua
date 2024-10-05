@@ -32,14 +32,15 @@ return {
 					["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 					["<Tab>"] = cmp.mapping.select_next_item(),
 				}),
-				sources = cmp.config.sources({
-					{ name = "nvim_lsp", priority = 10 },
-					{ name = "luasnip",  priority = 10 }, -- For luasnip users.
-				},
-				-- {
-				-- { name = "path",  priority = 10 },
-				-- { name = "buffer" },
-				-- }
+				sources = cmp.config.sources(
+					{
+						{ name = "nvim_lsp", priority = 10 },
+						{ name = "luasnip", priority = 10 }, -- For luasnip users.
+					}
+					-- {
+					-- { name = "path",  priority = 10 },
+					-- { name = "buffer" },
+					-- }
 				),
 			})
 		end,
