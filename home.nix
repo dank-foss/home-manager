@@ -42,7 +42,7 @@
 	".config/nvim/lua/config/lazy.lua".source = ./nvim/lua/config/lazy.lua;
 	".config/nvim/lua/plugins/flog.lua".source = ./nvim/lua/plugins/flog.lua;
 	".config/nvim/lua/plugins/neotree.lua".source = ./nvim/lua/plugins/neotree.lua;
-	".config/nvim/lua/plugins/pywal16.lua".source = ./nvim/lua/plugins/pywal16.lua;
+	".config/nvim/lua/plugins/colorschemes.lua".source = ./nvim/lua/plugins/colorschemes.lua;
 	".config/nvim/lua/plugins/telescope.lua".source = ./nvim/lua/plugins/telescope.lua;
 	".config/nvim/lua/plugins/treesitter.lua".source = ./nvim/lua/plugins/treesitter.lua;
 	".config/nvim/lua/plugins/lualine.lua".source = ./nvim/lua/plugins/lualine.lua;
