@@ -11,6 +11,7 @@ return {
 				null_ls.builtins.formatting.isort,
 				null_ls.builtins.completion.spell,
 				null_ls.builtins.diagnostics.cssls,
+				null_ls.builtins.diagnostics.denols,
 			},
 		})
 		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
