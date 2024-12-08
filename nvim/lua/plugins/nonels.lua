@@ -9,9 +9,12 @@ return {
 				null_ls.builtins.formatting.prettier,
 				null_ls.builtins.formatting.black,
 				null_ls.builtins.formatting.isort,
+				null_ls.builtins.completion.luasnip,
+				null_ls.builtins.formatting.biome,
 				null_ls.builtins.completion.spell,
-				null_ls.builtins.diagnostics.cssls,
-				null_ls.builtins.diagnostics.denols,
+				null_ls.builtins.diagnostics.fish,
+				null_ls.builtins.diagnostics.markdownlint,
+				null_ls.builtins.diagnostics.stylelint,
 			},
 		})
 		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
