@@ -13,7 +13,6 @@
   # environment.
   home.packages = with pkgs; [
 	asciiquarium
-	librewolf
 	meld
 	zoxide
     # # It is sometimes useful to fine-tune packages, for example, by applying
