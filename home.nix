@@ -64,6 +64,7 @@
 	".config/nvim/lua/plugins/highlight.lua".source = ./nvim/lua/plugins/highlight.lua;
 	".config/nvim/lua/plugins/indent.lua".source = ./nvim/lua/plugins/indent.lua;
 	".config/nvim/lua/plugins/codeium.lua".source = ./nvim/lua/plugins/codieum.lua;	
+	".config/nvim/lua/plugins/kitty.conf".source = ./nvim/lua/plugins/codieum.lua;	
   };
 
   # Home Manager can also manage your environment variables through
