@@ -15,6 +15,7 @@
     zoxide
     neovim
     nixfmt-rfc-style
+    yazi
     swww
     jetbrains.pycharm-community-bin
     pywal16
