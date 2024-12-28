@@ -58,7 +58,6 @@
     ".config/nvim/lua/plugins/debug.lua".source = ./nvim/lua/plugins/debug.lua;
     ".config/nvim/lua/plugins/autoclose.lua".source = ./nvim/lua/plugins/autoclose.lua;
     ".config/nvim/lua/plugins/autosession.lua".source = ./nvim/lua/plugins/autosession.lua;
-    ".config/nvim/lua/plugins/dashboard.lua".source = ./nvim/lua/plugins/dashboard.lua;
     ".config/nvim/lua/plugins/harpoon.lua".source = ./nvim/lua/plugins/harpoon.lua;
     ".config/nvim/lua/plugins/multicursor.lua".source = ./nvim/lua/plugins/multicursor.lua;
     ".config/nvim/lua/plugins/highlight.lua".source = ./nvim/lua/plugins/highlight.lua;
