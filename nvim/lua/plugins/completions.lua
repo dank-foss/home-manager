@@ -14,6 +14,7 @@ return {
 		config = function()
 			local cmp = require("cmp")
 			require("luasnip.loaders.from_vscode").lazy_load()
+
 			cmp.setup({
 				snippet = {
 					expand = function(args)
@@ -32,16 +33,13 @@ return {
 					["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 					["<Tab>"] = cmp.mapping.select_next_item(),
 				}),
-				sources = cmp.config.sources(
-					{
-						{ name = "nvim_lsp", priority = 10 },
-						-- { name = "luasnip", priority = 5 }, -- For luasnip users.
-					},
-					{
-					{ name = "path",  priority = 10 },
-					-- { name = "buffer" },
-					}
-				),
+				sources = cmp.config.sources({
+					{ name = "luasnip" },
+					{ name = "nvim_lsp" },
+				}, {
+					-- { name = "path",  priority = 10 },
+					{ name = "buffer" },
+				}),
 			})
 		end,
 	},

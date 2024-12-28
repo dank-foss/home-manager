@@ -17,6 +17,7 @@
     nixfmt-rfc-style
     lua
     luajitPackages.luarocks
+    obsidian
     nixd
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -82,9 +83,7 @@
   #
   #  /etc/profiles/per-user/baka/etc/profile.d/hm-session-vars.sh
   #
-  home.sessionVariables = {
-    # EDITOR = "emacs";
-  };
+  nixpkgs.config.allowUnfree = true;
 
   programs.git = {
     enable = true;

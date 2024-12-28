@@ -12,8 +12,6 @@ return {
 				null_ls.builtins.formatting.nixfmt,
 				null_ls.builtins.formatting.biome,
 
-				null_ls.builtins.completion.spell,
-
 				null_ls.builtins.diagnostics.fish,
 				null_ls.builtins.diagnostics.markdownlint,
 				null_ls.builtins.diagnostics.stylelint,
