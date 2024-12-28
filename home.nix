@@ -15,6 +15,9 @@
     zoxide
     neovim
     nixfmt-rfc-style
+    swww
+    jetbrains.pycharm-community-bin
+    pywal16
     lua
     luajitPackages.luarocks
     obsidian
