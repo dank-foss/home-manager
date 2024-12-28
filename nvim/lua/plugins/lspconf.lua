@@ -27,7 +27,7 @@ return {
 			lspconfig.jedi_language_server.setup({ capabilities = capabilities })
 			lspconfig.cssls.setup({ capabilities = capabilities })
 			lspconfig.denols.setup({ capabilities = capabilities })
-
+			lspconfig.nixd.setup({ capabilities = capabilities })
 			vim.keymap.set("n", "<C-d>", vim.lsp.buf.hover, {})
 			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
