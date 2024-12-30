@@ -14,6 +14,7 @@
   home.packages = with pkgs; [
     zoxide
     neovim
+    librewolf
     nixfmt-rfc-style
     yazi
     swww
