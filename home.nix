@@ -70,6 +70,7 @@
     ".config/nvim/lua/plugins/indent.lua".source = ./nvim/lua/plugins/indent.lua;
     ".config/nvim/lua/plugins/codeium.lua".source = ./nvim/lua/plugins/codieum.lua;
     ".config/nvim/lua/plugins/markview.lua".source = ./nvim/lua/plugins/markview.lua;
+    ".config/nvim/lua/plugins/snacks.lua".source = ./nvim/lua/plugins/snacks.lua;
 
     #kitty
     ".config/kitty/kitty.conf".source = ./kitty/kitty.conf;
