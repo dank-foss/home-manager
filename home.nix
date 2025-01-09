@@ -45,10 +45,6 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
-    # ".config/fish/config.fish".source = ./fish/config.fish;
-    # ".config/fish/functions/fish_greeting.fish".source = ./fish/functions/fish_greeting.fish;
-    # ".config/nvim".source = ./nvim;
-    # ".config/kitty".source = ./kitty;
   };
 
   # Home Manager can also manage your environment variables through
