@@ -13,6 +13,7 @@
   # environment.
   home.packages = with pkgs; [
     zoxide
+    bat
     neovim
     librewolf
     nixfmt-rfc-style
@@ -30,6 +31,10 @@
     stow
     gitg
     pika-backup
+    zig
+    lua
+    figlet
+    jetbrains-mono
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
