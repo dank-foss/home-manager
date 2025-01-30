@@ -13,13 +13,14 @@
   # environment.
   home.packages = with pkgs; [
     gowall
-    spicetify-cli
     htop
+    eww
     zoxide
     bat
     neovim
     librewolf
     nixfmt-rfc-style
+    nitrogen
     yazi
     swww
     jetbrains.pycharm-community-bin
@@ -37,6 +38,7 @@
     zig
     lua
     figlet
+    pfetch-rs
     jetbrains-mono
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
