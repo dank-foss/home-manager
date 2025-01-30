@@ -13,6 +13,8 @@
   # environment.
   home.packages = with pkgs; [
     gowall
+    deno
+    nodejs
     htop
     eww
     zoxide
