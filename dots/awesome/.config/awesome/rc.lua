@@ -74,9 +74,9 @@ myawesomemenu = {
 			hotkeys_popup.show_help(nil, awful.screen.focused())
 		end,
 	},
-	{ "manual", terminal .. " -e man awesome" },
+	{ "manual",      terminal .. " -e man awesome" },
 	{ "edit config", editor_cmd .. " " .. awesome.conffile },
-	{ "restart", awesome.restart },
+	{ "restart",     awesome.restart },
 	{
 		"quit",
 		function()
@@ -216,7 +216,7 @@ awful.screen.connect_for_each_screen(function(s)
 			s.mypromptbox,
 		},
 		s.mytasklist, -- Middle widget
-		{ -- Right widgets
+		{       -- Right widgets
 			layout = wibox.layout.fixed.horizontal,
 			mykeyboardlayout,
 			wibox.widget.systray(),
@@ -336,9 +336,7 @@ clientkeys = gears.table.join(
 	awful.key({ modkey }, "q", function(c)
 		c:kill()
 	end, { description = "close", group = "client" }),
-
 	awful.key({ modkey }, "p", awful.client.floating.toggle, { description = "toggle floating", group = "client" }),
-
 	awful.key({ modkey }, "f", function(c)
 		c.fullscreen = not c.fullscreen
 		c:raise()
@@ -497,25 +495,23 @@ end)
 
 -- Add a titlebar if titlebars_enabled is set to true in the rules.
 client.connect_signal("request::titlebars", function(c)
-	awful.titlebar(c):setup({
-		{ -- Left
-			awful.titlebar.widget.iconwidget(c),
-			layout = wibox.layout.fixed.horizontal,
-		},
-		{ -- Middle
-			{ -- Title
-				align = "center",
-				widget = awful.titlebar.widget.titlewidget(c),
+	awful
+		.titlebar(c, { size = 20 }) -- Increase size
+		:setup({
+			{                 -- Left (Window title)
+				{
+					align = "left",
+					widget = awful.titlebar.widget.titlewidget(c),
+				},
+				layout = wibox.layout.fixed.horizontal,
 			},
-			layout = wibox.layout.flex.horizontal,
-		},
-		{ -- Right
-			awful.titlebar.widget.maximizedbutton(c),
-			awful.titlebar.widget.closebutton(c),
-			layout = wibox.layout.fixed.horizontal(),
-		},
-		layout = wibox.layout.align.horizontal,
-	})
+			nil, -- Middle (Empty for spacing)
+			{ -- Right (Close button)
+				awful.titlebar.widget.closebutton(c),
+				layout = wibox.layout.fixed.horizontal,
+			},
+			layout = wibox.layout.align.horizontal,
+		})
 end)
 
 -- Enable sloppy focus, so that focus follows mouse.
