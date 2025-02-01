@@ -45,6 +45,7 @@
     julia-mono
     prettierd
     biome
+    tree-sitter
     markdownlint-cli2
     stylelint
     # # It is sometimes useful to fine-tune packages, for example, by applying
