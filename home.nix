@@ -28,7 +28,7 @@
     jetbrains.pycharm-community-bin
     pywal16
     lua
-    luajitPackages.luarocks
+    luajitPackages.luarocks-nix
     obsidian
     nixd
     git
