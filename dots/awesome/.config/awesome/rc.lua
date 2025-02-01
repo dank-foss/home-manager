@@ -74,9 +74,9 @@ myawesomemenu = {
 			hotkeys_popup.show_help(nil, awful.screen.focused())
 		end,
 	},
-	{ "manual",      terminal .. " -e man awesome" },
+	{ "manual", terminal .. " -e man awesome" },
 	{ "edit config", editor_cmd .. " " .. awesome.conffile },
-	{ "restart",     awesome.restart },
+	{ "restart", awesome.restart },
 	{
 		"quit",
 		function()
@@ -216,7 +216,7 @@ awful.screen.connect_for_each_screen(function(s)
 			s.mypromptbox,
 		},
 		s.mytasklist, -- Middle widget
-		{       -- Right widgets
+		{ -- Right widgets
 			layout = wibox.layout.fixed.horizontal,
 			mykeyboardlayout,
 			wibox.widget.systray(),
@@ -337,12 +337,7 @@ clientkeys = gears.table.join(
 		c:kill()
 	end, { description = "close", group = "client" }),
 
-	awful.key(
-		{ modkey },
-		"p",
-		awful.client.floating.toggle,
-		{ description = "toggle floating", group = "client" }
-	),
+	awful.key({ modkey }, "p", awful.client.floating.toggle, { description = "toggle floating", group = "client" }),
 
 	awful.key({ modkey }, "f", function(c)
 		c.fullscreen = not c.fullscreen

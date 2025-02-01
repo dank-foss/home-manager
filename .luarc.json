@@ -2,6 +2,7 @@
     "diagnostics.globals": [
         "awesome",
         "editor",
-        "clientkeys"
+        "clientkeys",
+        "client"
     ]
 }
