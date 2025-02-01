@@ -27,8 +27,8 @@
     swww
     jetbrains.pycharm-community-bin
     pywal16
-    lua
     luajitPackages.luarocks-nix
+    lua51Packages.lua
     obsidian
     nixd
     git
@@ -38,7 +38,6 @@
     gitg
     pika-backup
     zig
-    lua
     figlet
     pfetch-rs
     jetbrains-mono
