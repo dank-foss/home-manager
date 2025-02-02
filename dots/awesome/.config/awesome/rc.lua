@@ -496,17 +496,21 @@ end)
 -- Add a titlebar if titlebars_enabled is set to true in the rules.
 client.connect_signal("request::titlebars", function(c)
 	awful
-		.titlebar(c, { size = 20 }) -- Increase size
+		.titlebar(c, {
+			size = 20, -- Titlebar height
+			bg_normal = "#282a36",
+			fg_normal = "#f8f8f2",
+		})
 		:setup({
-			{                 -- Left (Window title)
+			{ -- Left: Application Name
 				{
+					widget = awful.titlebar.widget.iconwidget(c),
 					align = "left",
-					widget = awful.titlebar.widget.titlewidget(c),
 				},
 				layout = wibox.layout.fixed.horizontal,
 			},
-			nil, -- Middle (Empty for spacing)
-			{ -- Right (Close button)
+			nil, -- Middle (empty)
+			{ -- Right: Close Button
 				awful.titlebar.widget.closebutton(c),
 				layout = wibox.layout.fixed.horizontal,
 			},
