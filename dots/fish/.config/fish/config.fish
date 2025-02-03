@@ -5,4 +5,5 @@ if status is-interactive
     bind \e\[3\;5~ kill-word
     zoxide init --cmd "cd" fish | source
     figlet welcome, GUGA
+	atuin init fish | source
 end
