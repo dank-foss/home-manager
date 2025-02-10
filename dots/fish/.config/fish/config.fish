@@ -3,7 +3,7 @@ if status is-interactive
     bind \b backward-kill-word
     cat ~/.cache/wal/sequences
     bind \e\[3\;5~ kill-word
-    zoxide init --cmd cd fish | source
+    zoxide init --cmd c fish | source
     figlet welcome, GUGA
     atuin init fish | source
     abbr -a gu gitui
