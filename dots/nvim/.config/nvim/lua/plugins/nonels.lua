@@ -11,6 +11,7 @@ return {
 				null_ls.builtins.formatting.isort,
 				null_ls.builtins.formatting.nixfmt,
 				null_ls.builtins.formatting.biome,
+				null_ls.builtins.formatting.fish_indent,
 
 				null_ls.builtins.diagnostics.fish,
 				null_ls.builtins.diagnostics.markdownlint_cli2,
