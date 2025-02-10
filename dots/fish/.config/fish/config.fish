@@ -6,4 +6,6 @@ if status is-interactive
     zoxide init --cmd "cd" fish | source
     figlet welcome, GUGA
 	atuin init fish | source
+	abbr -a gu 'gitui' 
+	kdlfmt completions fish
 end
