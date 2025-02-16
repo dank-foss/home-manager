@@ -7,4 +7,5 @@ if status is-interactive
     figlet welcome, GUGA
     atuin init fish | source
     abbr -a gu gitui
+    abbr -a nv nvim
 end
