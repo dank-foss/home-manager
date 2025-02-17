@@ -102,6 +102,11 @@
     };
     userEmail = "chadfoss@duck.com";
     userName = "chaddy";
+    extraConfig = {
+      init = {
+        defaultBranch = "main";
+      };
+    };
   };
 
   programs.gitui.enable = true;
