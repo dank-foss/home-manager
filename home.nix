@@ -15,51 +15,54 @@
     gowall
     deno
     nodejs
+    luajitPackages.luarocks-nix
+    lua51Packages.lua
+    nixfmt-rfc-style
+    prettierd
+    biome
+    nixd
+    git
+    statix
+    zig
+
+    cmake
+    meson
+    cpio
+    pkg-config
+
+    wl-clipboard-rs
+    wev
     htop
     eww
     zoxide
     bat
     neovim
     librewolf
-    nixfmt-rfc-style
     nitrogen
     yazi
     swww
     jetbrains.pycharm-community-bin
     pywal16
-    luajitPackages.luarocks-nix
-    lua51Packages.lua
     obsidian
-    nixd
-    git
-    statix
     brave
     stow
     gitg
     pika-backup
-    zig
     figlet
     pfetch-rs
     jetbrains-mono
     ripgrep
     julia-mono
-    prettierd
-    biome
     tree-sitter
     markdownlint-cli2
     stylelint
-    cmake
-    meson
-    cpio
-    pkg-config
     atuin
     legcord
     alpaca
     sublime-merge
     fretboard
     bluetui
-    wl-clipboard-rs
-    wev
+    pipes-rs
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
