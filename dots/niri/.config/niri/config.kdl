@@ -222,10 +222,10 @@ binds {
     Mod+Return {
         spawn "kitty"
     }
-    Mod+E {
+    Mod+f {
         spawn "nautilus"
     }
-    Mod+F {
+    Mod+w {
         spawn "firefox"
     }
     Mod+D {
