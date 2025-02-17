@@ -224,10 +224,10 @@ binds {
     Mod+E {
         spawn "nautilus"
     }
-    Mod+F {
+    Mod+W {
         spawn "firefox"
     }
-    Mod+D {
+    Mod+f {
         spawn "fuzzel"
     }
     Super+Alt+L {
