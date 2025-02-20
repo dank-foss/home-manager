@@ -1,17 +1,13 @@
-{ config, pkgs, ... }:
-
 {
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
-  home.username = "baka";
-  home.homeDirectory = "/home/baka";
-  targets.genericLinux.enable = true;
+  config,
+  pkgs,
+  my-shell,
+  ...
+}:
 
-  home.stateVersion = "24.05"; # Please read the comment before changing.
-
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
-  home.packages = with pkgs; [
+let
+  pkg-list = with pkgs; [
+    dart-sass
     gowall
     deno
     nodejs
@@ -74,7 +70,20 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
+in
+{
+  # Home Manager needs a bit of information about you and the paths it should
+  # manage.
+  home.username = "baka";
+  home.homeDirectory = "/home/baka";
+  targets.genericLinux.enable = true;
 
+  home.stateVersion = "24.05"; # Please read the comment before changing.
+
+  # The home.packages option allows you to install Nix packages into your
+  # environment.
+
+  home.packages = pkg-list ++ [ my-shell ];
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
