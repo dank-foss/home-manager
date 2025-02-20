@@ -8,16 +8,37 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    astal = {
+      url = "github:aylur/astal";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
   };
 
   outputs =
-    { nixpkgs, home-manager, ... }:
+    {
+      nixpkgs,
+      home-manager,
+      astal,
+      ...
+    }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
+      astal-pkgs = astal.packages.${system};
+      my-shell = astal.lib.mkLuaPackage {
+        inherit pkgs;
+        name = "my-shell";
+        src = builtins.path{path = ./dots/ags/.config/ags; } ; # Ensure init.lua is here
+
+        extraPackages = [
+          astal-pkgs.battery
+          pkgs.dart-sass
+        ];
+      };
     in
     {
+		packages.${system}.my-shell = my-shell;
       homeConfigurations."baka" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
