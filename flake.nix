@@ -48,6 +48,9 @@
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
+        extraSpecialArgs = {
+          inherit my-shell;
+        };
       };
     };
 }
