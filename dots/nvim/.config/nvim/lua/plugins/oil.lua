@@ -13,5 +13,6 @@ return {
 				"permissions",
 			},
 		})
+		vim.keymap.set("n", "<leader>e", ":Oil<CR>") --function()
 	end,
 }

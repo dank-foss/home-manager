@@ -29,9 +29,9 @@ vim.keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = "[F]ind [R]ecent" }
 
 --Neotree
 
-vim.keymap.set("n", "<leader>e", function()
-	require("neo-tree.command").execute({ reveal = true, toggle = true })
-end, {})
+-- vim.keymap.set("n", "<leader>e", ":Oil<CR>")--function()
+	-- require("neo-tree.command").execute({ reveal = true, toggle = true })
+-- end, {})
 vim.keymap.set("n", "<leader>cd", ":Neotree dir=", {})
 vim.keymap.set("n", "<leader>gs", ":Neotree reveal git_status<CR>", {})
 
