@@ -20,7 +20,6 @@
     zoxide
     bat
     neovim
-    librewolf
     nixfmt-rfc-style
     nitrogen
     yazi
@@ -33,6 +32,16 @@
     nixd
     git
     statix
+    librewolf-bin
+    nerdfetch
+    element-desktop
+    element-call
+    zenith-nvidia
+    telegram-desktop
+    spotify-tray
+    spotify
+    zathura
+    temurin-jre-bin
     brave
     stow
     gitg
@@ -94,7 +103,6 @@
   #  /etc/profiles/per-user/baka/etc/profile.d/hm-session-vars.sh
   #
   nixpkgs.config.allowUnfree = true;
-
   programs.git = {
     enable = true;
     aliases = {
@@ -110,7 +118,22 @@
   };
 
   programs.gitui.enable = true;
+  programs.starship = {
+    enable = true;
+    settings = {
+      # add_newline = false;
 
+      # character = {
+      #   success_symbol = "[➜](bold green)";
+      #   error_symbol = "[➜](bold red)";
+      # };
+
+      # package.disabled = true;
+    };
+  };
+  programs.bash = {
+    enable = true;
+  };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
