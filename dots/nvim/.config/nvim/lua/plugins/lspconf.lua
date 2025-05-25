@@ -30,7 +30,10 @@ return {
 			lspconfig.nixd.setup({ capabilities = capabilities })
 			vim.keymap.set("n", "<C-d>", vim.lsp.buf.hover, {})
 			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
-			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
+			vim.keymap.set("n", "<leader>gd", function()
+				vim.cmd("vsplit")
+				vim.lsp.buf.definition()
+			end, {})
 		end,
 	},
 
