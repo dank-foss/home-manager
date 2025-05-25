@@ -34,10 +34,10 @@ return {
 					["<Tab>"] = cmp.mapping.select_next_item(),
 				}),
 				sources = cmp.config.sources({
+					{ name = "nvim_lsp", priority = 50 },
 					{ name = "luasnip" },
-					{ name = "nvim_lsp" },
 				}, {
-					{ name = "path", priority = 10 },
+					{ name = "path", priority = 1000 },
 					{ name = "buffer" },
 				}),
 			})
