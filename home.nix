@@ -88,8 +88,7 @@
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
-  home.file = {
-  };
+  home.file = { };
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
@@ -109,16 +108,10 @@
   #
   programs.git = {
     enable = true;
-    aliases = {
-      ac = "commit -am";
-    };
+    aliases = { ac = "commit -am"; };
     userEmail = "chadfoss@duck.com";
     userName = "chaddy";
-    extraConfig = {
-      init = {
-        defaultBranch = "main";
-      };
-    };
+    extraConfig = { init = { defaultBranch = "main"; }; };
   };
 
   programs.gitui.enable = true;
@@ -135,9 +128,7 @@
       # package.disabled = true;
     };
   };
-  programs.bash = {
-    enable = true;
-  };
+  programs.bash = { enable = true; };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
