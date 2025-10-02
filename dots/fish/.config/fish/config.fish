@@ -4,7 +4,8 @@ if status is-interactive
     cat ~/.cache/wal/sequences
     bind \e\[3\;5~ kill-word
     zoxide init --cmd c fish | source
-    figlet welcome, GUGA
+    figlet welcome
+    figlet JADOO
     abbr -a -- nv nvim
     atuin init fish | source
 end
