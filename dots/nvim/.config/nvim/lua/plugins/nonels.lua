@@ -16,6 +16,7 @@ return {
 				null_ls.builtins.diagnostics.fish,
 				null_ls.builtins.diagnostics.markdownlint_cli2,
 				null_ls.builtins.diagnostics.stylelint,
+				null_ls.builtins.diagnostics.qmllint,
 
 				null_ls.builtins.code_actions.statix,
 				null_ls.builtins.code_actions.gitsigns,
