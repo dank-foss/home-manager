@@ -1,29 +1,34 @@
-{ config, pkgs, ... }:
+{ config, pkgs, ... }@inputs:
 
 {
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
   home.username = "baka";
   home.homeDirectory = "/home/baka";
   targets.genericLinux.enable = true;
 
-  home.stateVersion = "24.05"; # Please read the comment before changing.
+  home.stateVersion = "24.05";
+  nixpkgs.config.allowUnfree = true;
 
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
+  imports = [ inputs.dms.homeModules.dankMaterialShell.default ];
   home.packages = with pkgs; [
     gowall
     deno
     nodejs
     htop
     eww
+    apostrophe
+    foliate
+    redshift
+    flameshot
+    dunst
+    rofi
+    picom-pijulius
     zoxide
     bat
     neovim
     nixfmt-rfc-style
     nitrogen
+    python313Packages.jedi-language-server
     yazi
-    swww
     jetbrains.pycharm-community-bin
     pywal16
     luajitPackages.luarocks-nix
