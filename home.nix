@@ -107,7 +107,6 @@
   #
   #  /etc/profiles/per-user/baka/etc/profile.d/hm-session-vars.sh
   #
-  nixpkgs.config.allowUnfree = true;
   programs.git = {
     enable = true;
     aliases = {
